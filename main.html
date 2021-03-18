@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>オセロゲーム！！！！</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body onload="setPlay()">
+    <div class="header">
+        <div class="header-txt">
+            <p>オセロゲーム！！！！</p>
+            <p id="display">黒の番です。　黒：2コ　白：2コ</p>
+        </div>
+    </div>
+    <div class="main">
+        <script type="text/javascript" src="main.js"></script>
+         <div id="field">
+            <button class="btn1" type="button" onclick="put(this)" value="0,0"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="0,1"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="0,2"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="0,3"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="0,4"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="0,5"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="0,6"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="0,7"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="1,0"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="1,1"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="1,2"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="1,3"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="1,4"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="1,5"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="1,6"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="1,7"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="2,0"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="2,1"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="2,2"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="2,3"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="2,4"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="2,5"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="2,6"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="2,7"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="3,0"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="3,1"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="3,2"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="3,3"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="3,4"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="3,5"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="3,6"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="3,7"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="4,0"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="4,1"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="4,2"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="4,3"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="4,4"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="4,5"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="4,6"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="4,7"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="5,0"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="5,1"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="5,2"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="5,3"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="5,4"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="5,5"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="5,6"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="5,7"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="6,0"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="6,1"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="6,2"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="6,3"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="6,4"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="6,5"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="6,6"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="6,7"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="7,0"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="7,1"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="7,2"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="7,3"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="7,4"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="7,5"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="7,6"> </button>
+            <button class="btn1" type="button" onclick="put(this)" value="7,7"> </button>
+        </div>
+    </head>
+</body>
+</html>

@@ -1,0 +1,46 @@
+.header{
+    height: 100px;
+    width: 100%;
+    background-color: rgba(34, 49, 52, 0.9);
+    position :fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.header-txt{
+    height:55px;
+    width:auto;
+    font-size:30px;
+    text-align: left;
+    font-weight: 2px;
+    color:aliceblue;
+    font-family: ＭＳ Ｐ明朝;
+}
+.main{
+    width:100%;
+    height: 900px;
+    padding:50px;
+}
+#field{
+    background: black;
+    width:520px;
+    height:534px;
+    margin-top:50px;
+    margin-left:300px;
+}
+.btn1{
+    color:aliceblue;
+    height:60px;
+    width:60px;
+    margin-top: 3px;
+    opacity:0.9;
+}
+.btn1:hover{
+    opacity:1;
+}
+.header-txt p{
+    display:inline-block;
+}
+.header-txt p{
+    padding-right:120px;
+}
